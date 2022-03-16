@@ -85,7 +85,7 @@ import axios from 'axios'
           if (my) {
             this.gotCurrency.value = ((this.myCurrency.value / bid) - this.fee).toFixed(2)
           } else {
-            this.myCurrency.value = (this.gotCurrency.value / bid).toFixed(2)
+            this.myCurrency.value = (this.gotCurrency.value * bid).toFixed(2)
           }
         }
         if (this.gotCurrency.value <= 0) {
